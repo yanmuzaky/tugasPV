@@ -1,0 +1,10 @@
+C:\Users\Yan\source\repos\FutsalBooking\FutsalBooking\bin\Debug\FutsalBooking.exe.config
+C:\Users\Yan\source\repos\FutsalBooking\FutsalBooking\bin\Debug\FutsalBooking.exe
+C:\Users\Yan\source\repos\FutsalBooking\FutsalBooking\bin\Debug\FutsalBooking.pdb
+C:\Users\Yan\source\repos\FutsalBooking\FutsalBooking\obj\Debug\FutsalBooking.csproj.AssemblyReference.cache
+C:\Users\Yan\source\repos\FutsalBooking\FutsalBooking\obj\Debug\FutsalBooking.Form1.resources
+C:\Users\Yan\source\repos\FutsalBooking\FutsalBooking\obj\Debug\FutsalBooking.Properties.Resources.resources
+C:\Users\Yan\source\repos\FutsalBooking\FutsalBooking\obj\Debug\FutsalBooking.csproj.GenerateResource.cache
+C:\Users\Yan\source\repos\FutsalBooking\FutsalBooking\obj\Debug\FutsalBooking.csproj.CoreCompileInputs.cache
+C:\Users\Yan\source\repos\FutsalBooking\FutsalBooking\obj\Debug\FutsalBooking.exe
+C:\Users\Yan\source\repos\FutsalBooking\FutsalBooking\obj\Debug\FutsalBooking.pdb
