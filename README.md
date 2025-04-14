@@ -1,7 +1,7 @@
 # tugasPV
-![login].(1.png)
-![dashboard].(2.png)
-![transaksi].(3.png)
+![login](1.png)
+![dashboard](2.png)
+![transaksi](3.png)
 Deskripsi Proyek: Aplikasi Booking Futsal
 Aplikasi ini dibuat menggunakan C# Windows Forms di Visual Studio 2022 untuk mempermudah pengguna dalam melakukan pemesanan lapangan futsal.
 
