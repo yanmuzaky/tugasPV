@@ -1,0 +1,53 @@
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\Aplikasi Booking Futsal.exe.config
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\Aplikasi Booking Futsal.exe
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\Aplikasi Booking Futsal.pdb
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\Bunifu.Licensing.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\Google.Protobuf.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\MySql.Data.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\NuGet.Frameworks.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.Buffers.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.CodeDom.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.Memory.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\ZstdSharp.dll
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\Google.Protobuf.pdb
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\Google.Protobuf.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\MySql.Data.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\NuGet.Frameworks.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.Buffers.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.CodeDom.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.Memory.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\obj\Debug\Aplikasi Booking Futsal.csproj.AssemblyReference.cache
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\obj\Debug\Aplikasi_Booking_Futsal.login.resources
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\obj\Debug\Aplikasi_Booking_Futsal.Properties.Resources.resources
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\obj\Debug\Aplikasi Booking Futsal.csproj.GenerateResource.cache
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\obj\Debug\Aplikasi Booking Futsal.csproj.CoreCompileInputs.cache
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\obj\Debug\Aplikasi.E6AC0877.Up2Date
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\obj\Debug\Aplikasi Booking Futsal.exe
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\obj\Debug\Aplikasi Booking Futsal.pdb
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\obj\Debug\Aplikasi_Booking_Futsal.main.resources
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\obj\Debug\Aplikasi_Booking_Futsal.dashboard.resources
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\obj\Debug\Aplikasi_Booking_Futsal.booking.resources
