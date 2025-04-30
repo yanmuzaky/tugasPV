@@ -28,6 +28,8 @@ namespace Aplikasi_Booking_Futsal
         private void dashboard_Load(object sender, EventArgs e)
         {
             this.ControlBox = false;
+            search_txt.Text = "Search...  ";
+            search_txt.ForeColor = Color.Gray;
 
             LoadData();
 
@@ -80,7 +82,8 @@ namespace Aplikasi_Booking_Futsal
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
-                DialogResult result = MessageBox.Show("Apakah Anda yakin ingin menghapus data ini?", "Konfirmasi Hapus", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("Apakah Anda yakin ingin menghapus data ini?", 
+                    "Konfirmasi Hapus", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (result == DialogResult.Yes)
                 {
@@ -99,7 +102,7 @@ namespace Aplikasi_Booking_Futsal
 
                         koneksi.tutup();
                         MessageBox.Show("Data berhasil dihapus.");
-                        LoadData(); // Refresh dataGridView setelah hapus
+                        LoadData(); 
                     }
                     catch (Exception ex)
                     {
@@ -110,6 +113,58 @@ namespace Aplikasi_Booking_Futsal
             else
             {
                 MessageBox.Show("Pilih data yang ingin dihapus terlebih dahulu!");
+            }
+        }
+
+        private void search_txt_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(search_txt.Text) || search_txt.Text == "Search...  ")
+            {
+                LoadData(); 
+            }
+            else
+            {
+                CariData(search_txt.Text);
+            }
+        }
+
+        public void CariData(string keyword)
+        {
+            koneksi = new Koneksi();
+            DataSet ds = new DataSet();
+            DataTable dt;
+
+            koneksi.buka();
+            var con = koneksi.koneksi;
+
+            string sql = "SELECT * FROM booking WHERE nama LIKE @keyword OR tgl_booking LIKE @keyword";
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@keyword", "%" + keyword + "%");
+
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            ds.Reset();
+            da.Fill(ds);
+            dt = ds.Tables[0];
+            dataGridView1.DataSource = dt;
+
+            koneksi.tutup();
+        }
+
+        private void search_txt_Enter(object sender, EventArgs e)
+        {
+            if (search_txt.Text == "Search...  ")
+            {
+                search_txt.Text = "";
+                search_txt.ForeColor = Color.Black;
+            }
+        }
+
+        private void search_txt_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(search_txt.Text))
+            {
+                search_txt.Text = "Search...  ";
+                search_txt.ForeColor = Color.Gray;
             }
         }
     }

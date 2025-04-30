@@ -50,7 +50,7 @@ namespace Aplikasi_Booking_Futsal
         {
             sidebarTimer.Start();
             menuButton.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
-            menuButton.Refresh(); // Refresh agar perubahan terlihat
+            menuButton.Refresh();
         }
 
         public void showDashboard()
@@ -121,12 +121,28 @@ namespace Aplikasi_Booking_Futsal
                 dashboard.FormClosed += Dashboard_FormClosed;
                 dashboard.MainForm = this;
                 dashboard.MdiParent = this;
-                dashboard.Dock = DockStyle.Fill; // supaya penuh
+                dashboard.Dock = DockStyle.Fill;
                 dashboard.Show();
             }
             else
             {
                 dashboard.Activate();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Apakah Anda yakin ingin Logout?", 
+                "Konfirmasi logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                login login = new login();
+                login.Show();
+                this.Close();
+            }
+            else
+            {
+
             }
         }
     }

@@ -51,9 +51,9 @@ namespace Aplikasi_Booking_Futsal
             this.ControlBox = false;
 
             if (isEdit)
-                button1.Text = "Update"; // Ganti tombol jadi Update
+                button1.Text = "Update"; 
             else
-                button1.Text = "Submit"; // Default tombol Submit
+                button1.Text = "Submit"; 
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -80,16 +80,17 @@ namespace Aplikasi_Booking_Futsal
 
                 if (isEdit)
                 {
-                    // Mode Update
+                    // jika Update
                     sql.CommandText = "UPDATE booking SET nama = '" + nama + "', lapangan = '" + lapangan + "', " +
                                       "tgl_booking = '" + tanggalBooking + "', tgl_main = '" + tanggalMain + "', " +
                                       "jam_main = '" + jamMulai + "', durasi = '" + durasi + "' WHERE id_boking = " + bookingId;
                 }
                 else
                 {
-                    // Mode Insert
+                    // jika Insert
                     sql.CommandText = "INSERT INTO booking (nama, lapangan, tgl_booking, tgl_main, jam_main, durasi) " +
-                                      "VALUES ('" + nama + "', '" + lapangan + "', '" + tanggalBooking + "', '" + tanggalMain + "', '" + jamMulai + "', '" + durasi + "')";
+                                      "VALUES ('" + nama + "', '" + lapangan + "', '" + tanggalBooking + "', '" + tanggalMain + 
+                                      "', '" + jamMulai + "', '" + durasi + "')";
                 }
 
                 sql.ExecuteNonQuery();
