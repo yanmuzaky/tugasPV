@@ -51,3 +51,4 @@ C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\obj\De
 C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\obj\Debug\Aplikasi_Booking_Futsal.main.resources
 C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\obj\Debug\Aplikasi_Booking_Futsal.dashboard.resources
 C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\obj\Debug\Aplikasi_Booking_Futsal.booking.resources
+C:\Users\Yan\source\repos\Aplikasi Booking Futsal\Aplikasi Booking Futsal\obj\Debug\Aplikasi_Booking_Futsal.member.resources

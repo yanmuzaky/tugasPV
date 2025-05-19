@@ -37,6 +37,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -49,6 +51,7 @@
             this.panel3.SuspendLayout();
             this.sidebar.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -68,12 +71,12 @@
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(249)))), ((int)(((byte)(227)))));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(-16, -6);
+            this.button2.Location = new System.Drawing.Point(-17, -7);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.button2.Size = new System.Drawing.Size(212, 69);
             this.button2.TabIndex = 1;
-            this.button2.Text = "            Booking";
+            this.button2.Text = "            Add Booking";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -121,22 +124,48 @@
             this.sidebar.Controls.Add(this.panel3);
             this.sidebar.Controls.Add(this.panel1);
             this.sidebar.Controls.Add(this.panel4);
+            this.sidebar.Controls.Add(this.panel5);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.MaximumSize = new System.Drawing.Size(187, 450);
             this.sidebar.MinimumSize = new System.Drawing.Size(73, 450);
             this.sidebar.Name = "sidebar";
             this.sidebar.Padding = new System.Windows.Forms.Padding(0, 60, 0, 0);
-            this.sidebar.Size = new System.Drawing.Size(73, 450);
+            this.sidebar.Size = new System.Drawing.Size(187, 450);
             this.sidebar.TabIndex = 0;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.button7);
             this.panel4.Location = new System.Drawing.Point(3, 177);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(180, 51);
             this.panel4.TabIndex = 3;
+            // 
+            // button7
+            // 
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(249)))), ((int)(((byte)(227)))));
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(-17, -9);
+            this.button7.Name = "button7";
+            this.button7.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button7.Size = new System.Drawing.Size(212, 69);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "            Member";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.button3);
+            this.panel5.Location = new System.Drawing.Point(3, 234);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(180, 51);
+            this.panel5.TabIndex = 4;
             // 
             // button3
             // 
@@ -251,6 +280,7 @@
             this.panel3.ResumeLayout(false);
             this.sidebar.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -274,5 +304,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Panel panel5;
     }
 }

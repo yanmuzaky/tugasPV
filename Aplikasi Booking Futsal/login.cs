@@ -7,14 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace Aplikasi_Booking_Futsal
 {
     public partial class login : Form
     {
-        private Koneksi koneksi;
-
         public login()
         {
             InitializeComponent();
@@ -22,34 +19,28 @@ namespace Aplikasi_Booking_Futsal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            koneksi = new Koneksi();
+            string nama = username_txt.Text;
+            string pass = pwd_txt.Text;
+
+            UserCRUD userCrud = new UserCRUD();
+
             try
             {
-                koneksi.buka();
-                var con = koneksi.koneksi;
+                bool loginBerhasil = userCrud.cekLogin(nama, pass);
 
-                string stm = "select nama,pass from user WHERE nama='" + username_txt.Text + "' " +
-                    "AND pass ='" + pwd_txt.Text + "';";
-                var cmd = new MySqlCommand(stm, con);
-                var reader = cmd.ExecuteReader();
-
-                if (reader.HasRows)
+                if (loginBerhasil)
                 {
-
                     main();
                 }
                 else
                 {
-                    MessageBox.Show("Login gagal: username atau password salah");
+                    MessageBox.Show("Login gagal! Username atau password salah.");
                 }
-
-                reader.Close();
             }
-            catch (Exception ex) {
-                MessageBox.Show(ex.Message);
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
             }
-            koneksi.tutup();
-            
         }
 
         public void main() 

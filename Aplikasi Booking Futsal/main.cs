@@ -16,6 +16,7 @@ namespace Aplikasi_Booking_Futsal
         bool sidebarExpand;
         dashboard dashboard;
         booking booking;
+        member member;
         public main MainForm;
 
 
@@ -143,6 +144,23 @@ namespace Aplikasi_Booking_Futsal
             else
             {
 
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (member == null)
+            {
+                member = new member();
+                member.FormClosed += Booking_FormClosed;
+                member.MainForm = this;
+                member.MdiParent = this;
+                member.Dock = DockStyle.Fill;
+                member.Show();
+            }
+            else
+            {
+                booking.Activate();
             }
         }
     }

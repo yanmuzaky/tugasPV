@@ -16,24 +16,21 @@ namespace Aplikasi_Booking_Futsal
     {
         Koneksi koneksi;
         public main MainForm;
-        private bool isEdit = false; // <- Tambah ini
-        private int bookingId;       // <- Ini buat tau ID booking yang diedit
+        private bool isEdit = false; 
+        private int bookingId;       
 
-        // Constructor untuk Insert Data (baru)
         public booking()
         {
             InitializeComponent();
         }
 
-        // Constructor untuk Edit Data
         public booking(int id, string nama, string lapangan, DateTime tglBooking, DateTime tglMain, TimeSpan jamMain, string durasi)
         {
             InitializeComponent();
 
-            isEdit = true; // <- tandain ini edit mode
-            bookingId = id; // <- simpan ID untuk update
+            isEdit = true; 
+            bookingId = id; 
 
-            // Isi form
             namaTxt.Text = nama;
             durasiTxt.Text = durasi;
             tglBook_dt.Value = tglBooking;
@@ -66,37 +63,22 @@ namespace Aplikasi_Booking_Futsal
                 string jamMulai = jamMulai_dt.Value.ToString("HH:mm:ss");
                 string tanggalBooking = tglBook_dt.Value.ToString("yyyy-MM-dd");
                 string durasi = durasiTxt.Text;
+                string lapangan = radioButton1.Checked ? "Lap 1" : "Lap 2";
 
-                string lapangan = "";
-                if (radioButton1.Checked)
-                    lapangan = "Lap 1";
-                else if (radioButton2.Checked)
-                    lapangan = "Lap 2";
-
-                koneksi.buka();
-                MySqlCommand sql = new MySqlCommand();
-                sql.Connection = koneksi.koneksi;
-                sql.CommandType = CommandType.Text;
+                bookingCRUD bookingCrud = new bookingCRUD();
 
                 if (isEdit)
                 {
                     // jika Update
-                    sql.CommandText = "UPDATE booking SET nama = '" + nama + "', lapangan = '" + lapangan + "', " +
-                                      "tgl_booking = '" + tanggalBooking + "', tgl_main = '" + tanggalMain + "', " +
-                                      "jam_main = '" + jamMulai + "', durasi = '" + durasi + "' WHERE id_boking = " + bookingId;
+                    bookingCrud.UpdateBooking(bookingId, nama, lapangan, tanggalBooking, tanggalMain, jamMulai, durasi);
+                    MessageBox.Show("Data Berhasil Diupdate");
                 }
                 else
                 {
                     // jika Insert
-                    sql.CommandText = "INSERT INTO booking (nama, lapangan, tgl_booking, tgl_main, jam_main, durasi) " +
-                                      "VALUES ('" + nama + "', '" + lapangan + "', '" + tanggalBooking + "', '" + tanggalMain + 
-                                      "', '" + jamMulai + "', '" + durasi + "')";
+                    bookingCrud.TambahBooking(nama, lapangan, tanggalBooking, tanggalMain, jamMulai, durasi);
+                    MessageBox.Show("Data Berhasil Ditambahkan");
                 }
-
-                sql.ExecuteNonQuery();
-                koneksi.tutup();
-
-                MessageBox.Show(isEdit ? "Data Berhasil Diupdate" : "Data Berhasil Ditambahkan");
 
                 ResetForm();
                 MainForm.showDashboard();
